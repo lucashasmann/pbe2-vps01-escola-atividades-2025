@@ -27,5 +27,33 @@ Desenvolver as funcionalidades conforme requisitos
 - [CT005] Cadastre, altere e exclua uma atividade.
 
 ## Tecnologias
+Node Js, Java Script, Prisma, MySQL, Cors e Express
 
 ## Passo a Passo de como executar a API
+
+Pré-requisitos
+Node.js (v18+)
+
+MySQL (ou outro banco de dados configurável no Prisma)
+
+Insomnia (para testes manuais)
+
+2. Configuração Inicial
+Clone o repositório:
+
+git clone https://github.com/seu-usuario/escola-acme-api.git
+cd escola-acme-api
+
+Instale as dependências:
+npm install
+
+Configure o banco de dados:
+Crie um arquivo .env na raiz do projeto:
+DATABASE_URL="mysql://USUARIO:SENHA@localhost:3306/escola_acme"
+
+Execute as migrações do Prisma:
+npx prisma migrate dev --name init
+
+
+Inicie o servidor:
+node server.js
